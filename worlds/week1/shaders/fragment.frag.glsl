@@ -16,9 +16,9 @@ void main() {
   float y = sin(uTime);
   float t = x*vPos.x + y*vPos.y - 0.36;
 
-  float red = sin(5.*t);; 
-  float green = cos(5.*t);
-  float blue = t;
+  float red = sin(5.*t); 
+  float green = cos(5.*t*sqrt(uTime));
+  float blue = red *red;
 
   // R,G,B EACH RANGE FROM 0.0 TO 1.0  
   vec3 color = vec3(red, green, blue);
