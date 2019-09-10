@@ -16,7 +16,7 @@ void main() {
   float y = sin(uTime);
   float t = x*vPos.x + y*vPos.y - 0.36;
 
-  float red = sin(5.*t); 
+  float red = sin(1.*t); 
   float green = cos(5.*t*sqrt(uTime));
   float blue = red *red;
 
